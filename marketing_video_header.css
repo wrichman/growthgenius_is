@@ -1,0 +1,42 @@
+@font-face{font-family:appleLogo;src:local("Lucida Grande");unicode-range:U+F8FF}
+body nav.top{-webkit-transition:-webkit-transform 420ms cubic-bezier(.165,.84,.44,1),opacity .1s ease-in;-moz-transition:-moz-transform 420ms cubic-bezier(.165,.84,.44,1),opacity .1s ease-in;transition:transform 420ms cubic-bezier(.165,.84,.44,1),opacity .1s ease-in}
+body nav.top.stealth{opacity:0}
+#page{margin-top:0}
+.video_header{position:relative;height:500px;text-align:center;overflow:hidden;will-change:height;-webkit-transition:height .1s;-moz-transition:height .1s;transition:height .1s}
+.video_header:focus .close_video.show,.video_header:hover .close_video.show{opacity:.8}
+.video_header .hero_image_overlay{position:absolute;top:0;left:0;width:100%;height:500px;cursor:pointer;will-change:height;-webkit-transition:height .1s;-moz-transition:height .1s;transition:height .1s;background-image:url(tour_header_video_1680px.png);background-size:cover;background-position:top}
+@media only screen and (max-width:1024px){.video_header .hero_image_overlay{background-image:url(tour_header_video_1024px.png)}
+}
+.video_header .video_text{position:absolute;top:3rem;width:100%;color:#fff}
+.video_header .video_text+.tour_btn{top:75%}
+.video_header .video_title{width:100%;font-size:3.3rem;line-height:3.6rem}
+@media only screen and (max-width:640px){.video_header .hero_image_overlay{background-image:url(tour_header_video_640px.png);background-position:top center}
+.video_header .video_text{top:2rem}
+.video_header .video_title{font-size:2rem;line-height:2.5rem}
+}
+.video_header .video_headline{position:relative;left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);padding-left:1rem;padding-right:1rem;max-width:600px}
+.video_header .btn.tour_btn{position:absolute;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);box-shadow:0 5px 10px 5px rgba(0,0,0,.24);padding-right:63px;outline:0;-webkit-transition:opacity .1s;-moz-transition:opacity .1s;transition:opacity .1s}
+.video_header .btn.tour_btn:before{position:absolute;right:0;-webkit-transform:translateX(-33px) translateY(-1px);-moz-transform:translateX(-33px) translateY(-1px);-ms-transform:translateX(-33px) translateY(-1px);transform:translateX(-33px) translateY(-1px);font-size:1.5rem}
+.video_header .play_btn{cursor:pointer;position:absolute;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);border:0;padding:0;width:162px;height:162px;background-color:transparent;background-size:162px 162px;opacity:.8;background-image:url(/video_play_button@1x.png)}
+.video_header .play_btn:hover{opacity:1}
+.video_header .play_btn:focus{outline:0;background-position:0 2px;background-position-y:2px}
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-resolution:192dpi),only screen and (min-resolution:2dppx){.video_header .play_btn{background-image:url(video_play_button@2x.png)}
+}
+@media only screen and (max-width:640px){.video_header .play_btn{background-image:url(video_play_button@1x.png);opacity:1}
+}
+.video_header .close_video{position:absolute;top:2rem;right:2rem;width:50px;height:50px;background:#434247;border:0;border-radius:3rem;color:#fbfaf8;cursor:pointer;outline:0;opacity:0;-webkit-transition:opacity .1s;-moz-transition:opacity .1s;transition:opacity .1s}
+.video_header .close_video:before{font-weight:700;font-size:30px;-webkit-transform:translateY(2px);-moz-transform:translateY(2px);-ms-transform:translateY(2px);transform:translateY(2px)}
+.video_header .stealth{opacity:0}
+.video_header~#page{height:auto;margin-top:auto}
+.headroom~#page .video_header,.video_header.below_nav{margin-top:90px}
+@media only screen and (max-width:640px),only screen and (max-height:768px){.headroom~#page .video_header,.video_header.below_nav{margin-top:72px}
+}
+.top.persistent~#page .video_header{margin-top:70px}
+.video_header.has_text .hero_image_overlay{background-image:url(tour_header_video_for_text_1680px.png);background-size:cover;background-position:center}
+@media only screen and (max-width:1024px){.video_header.has_text .hero_image_overlay{background-image:url(tour_header_video_for_text_1024px.png)}
+.video_header .hero_image_overlay.no_events{-ms-pointer-events:none;-webkit-pointer-events:none;pointer-events:none}
+}
+.video_header.has_text .video_headline{font-size:17px}
+@media only screen and (max-width:640px){.video_header.has_text .hero_image_overlay{background-image:url(tour_header_video_for_text_640px.png)}
+.video_header.has_text .video_headline{font-size:16px;line-height:25px}
+}
