@@ -131,7 +131,7 @@ section .grid:after{clear:both}
 .detail#search section{padding-left:516px}
 .detail#search h1{padding-top:90px}
 .detail#search .background{top:70px;left:1.06rem}
-.detail#everywhere{height:980px;background:#439fe0;color:#fff}
+.detail#everywhere{height:1050px;background:#439fe0;color:#fff}
 .detail#everywhere h1,.detail#everywhere p{opacity:1}
 .detail#everywhere .btn{border-color:rgba(255,255,255,.75);color:#fff;background-color:transparent}
 .detail#everywhere .everywhere{text-align:center}

@@ -2,15 +2,15 @@
 body nav.top{-webkit-transition:-webkit-transform 420ms cubic-bezier(.165,.84,.44,1),opacity .1s ease-in;-moz-transition:-moz-transform 420ms cubic-bezier(.165,.84,.44,1),opacity .1s ease-in;transition:transform 420ms cubic-bezier(.165,.84,.44,1),opacity .1s ease-in}
 body nav.top.stealth{opacity:0}
 #page{margin-top:0}
-.video_header{position:relative;height:500px;text-align:center;overflow:hidden;will-change:height;-webkit-transition:height .1s;-moz-transition:height .1s;transition:height .1s}
+.video_header{position:relative;height:500px;text-align:center;overflow:hidden;will-change:height;-webkit-transition:height .1s;-moz-transition:height .1s;transition:height .1s; background: black;}
 .video_header:focus .close_video.show,.video_header:hover .close_video.show{opacity:.8}
-.video_header .hero_image_overlay{position:absolute;top:0;left:0;width:100%;height:500px;cursor:pointer;will-change:height;-webkit-transition:height .1s;-moz-transition:height .1s;transition:height .1s;background-image:url(tour_header_video_1680px.png);background-size:cover;background-position:top}
-@media only screen and (max-width:1024px){.video_header .hero_image_overlay{background-image:url(tour_header_video_1024px.png)}
+.video_header .hero_image_overlay{position:absolute;top:0;left:0;width:80%;height:500px;cursor:pointer;will-change:height;-webkit-transition:height .1s;-moz-transition:height .1s;transition:height .1s;background-image:url(product_header.png);background-size:cover;background-position:top;margin: 5% 10%; border-radius: 10px;}
+@media only screen and (max-width:1024px){.video_header .hero_image_overlay{background-image:url(product_header.png)}
 }
 .video_header .video_text{position:absolute;top:3rem;width:100%;color:#fff}
 .video_header .video_text+.tour_btn{top:75%}
 .video_header .video_title{width:100%;font-size:3.3rem;line-height:3.6rem}
-@media only screen and (max-width:640px){.video_header .hero_image_overlay{background-image:url(tour_header_video_640px.png);background-position:top center}
+@media only screen and (max-width:640px){.video_header .hero_image_overlay{background-image:url(product_header.png);background-position:top center}
 .video_header .video_text{top:2rem}
 .video_header .video_title{font-size:2rem;line-height:2.5rem}
 }
@@ -32,11 +32,11 @@ body nav.top.stealth{opacity:0}
 @media only screen and (max-width:640px),only screen and (max-height:768px){.headroom~#page .video_header,.video_header.below_nav{margin-top:72px}
 }
 .top.persistent~#page .video_header{margin-top:70px}
-.video_header.has_text .hero_image_overlay{background-image:url(tour_header_video_for_text_1680px.png);background-size:cover;background-position:center}
-@media only screen and (max-width:1024px){.video_header.has_text .hero_image_overlay{background-image:url(tour_header_video_for_text_1024px.png)}
+.video_header.has_text .hero_image_overlay{background-image:url(product_header.png);background-size:cover;background-position:center}
+@media only screen and (max-width:1024px){.video_header.has_text .hero_image_overlay{background-image:url(product_header.png}
 .video_header .hero_image_overlay.no_events{-ms-pointer-events:none;-webkit-pointer-events:none;pointer-events:none}
 }
 .video_header.has_text .video_headline{font-size:17px}
-@media only screen and (max-width:640px){.video_header.has_text .hero_image_overlay{background-image:url(tour_header_video_for_text_640px.png)}
+@media only screen and (max-width:640px){.video_header.has_text .hero_image_overlay{background-image:url(product_header.png)}
 .video_header.has_text .video_headline{font-size:16px;line-height:25px}
 }
