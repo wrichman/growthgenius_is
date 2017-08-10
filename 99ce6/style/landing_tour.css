@@ -116,7 +116,7 @@ section .grid:after{clear:both}
 .detail#communicate .highlight[data-highlight=channel]{top:-25px}
 .detail#communicate .highlight[data-highlight=dm]{top:65px;background-position:0 -600px}
 }
-@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-resolution:192dpi),only screen and (min-resolution:2dppx){.detail#communicate .highlight{background-image:url("http://a.slack-edge.com/5a7a/img/tour/calls_window@2x.png")}
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-resolution:192dpi),only screen and (min-resolution:2dppx){.detail#communicate .highlight{background-image:url(/858e/img/tour/ways_highlights@2x.png)}
 .detail#communicate .highlight[data-highlight=calls]{background-image:url(/5a7a/img/tour/calls_window@2x.png)}
 }
 .detail#communicate[data-highlight=calls] .highlight[data-highlight=calls],.detail#communicate[data-highlight=channel] .highlight[data-highlight=channel],.detail#communicate[data-highlight=dm] .highlight[data-highlight=dm]{opacity:1}
